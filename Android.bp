@@ -15,6 +15,9 @@ cc_library_shared {
     header_libs: [
         "device_kernel_headers",
     ],
+    include_dirs: [
+        "$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include",
+    ],
 }
 
 cc_binary {
